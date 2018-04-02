@@ -29,7 +29,7 @@ $(function () {
     connection.onopen = function () {
         // first we want users to enter their names
         input.removeAttr('disabled');
-        status.text('Choose name:');
+        status.text('Web socket open, connection ready');
     };
 
     connection.onerror = function (error) {
